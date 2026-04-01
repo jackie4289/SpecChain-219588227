@@ -1,0 +1,45 @@
+{
+  "app_name": "Medito: Meditation & Sleep",
+  "app_id": "meditofoundation.medito",
+  "dataset_size": {
+    "raw_reviews": 5000,
+    "clean_reviews": 3891
+  },
+  "collection_method": {
+    "source": "Google Play Store",
+    "tool": "google-play-scraper",
+    "collected_at_utc": "2026-04-01T16:53:01.282185+00:00",
+    "parameters": {
+      "lang": "en",
+      "country": "us",
+      "sort": "NEWEST",
+      "target_count": 5000,
+      "batch_size": 200
+    },
+    "google_play_stats": {
+      "ratings": 40091,
+      "reviews": 2160,
+      "score": 4.894977,
+      "installs": "1,000,000+"
+    },
+    "limitation_note": "Google Play metadata reports 2160 reviews, but the API returned 5000 review records. The metadata field likely represents a subset; extracted the full target count."
+  },
+  "cleaning_decisions": [
+    "Removed duplicate reviews by review_id and duplicate cleaned text.",
+    "Removed empty reviews and reviews with blank content.",
+    "Removed reviews with fewer than 3 words after cleaning.",
+    "Lowercased all text.",
+    "Converted numbers to text using num2words.",
+    "Removed punctuation, special characters, and emojis using regex normalization.",
+    "Collapsed extra whitespace.",
+    "Removed English stop words (NLTK stopwords corpus).",
+    "Lemmatized tokens with NLTK WordNetLemmatizer."
+  ],
+  "cleaning_stats": {
+    "input_rows": 5000,
+    "removed_empty": 33,
+    "removed_duplicates": 160,
+    "removed_too_short": 916,
+    "output_rows": 3891
+  }
+}
