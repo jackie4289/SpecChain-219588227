@@ -1,22 +1,154 @@
-{  "personas": [
+{
+  "personas": [
     {
       "id": "P1",
-      "name": "Frequent Activity Tracker",
-      "description": "A user who relies on the app to log workouts frequently and expects stable performance.",
+      "name": "Users on a budget",
+      "description": "A user who uses Medito as a new user or return from other meditation apps that are free to use.",
       "derived_from_group": "G1",
       "goals": [
-        "Track workouts consistently",
-        "Log activity quickly"      ],
+        "Try out content before deciding to donate",
+        "Avoid subscriptions and third-party ads",
+        "Seek transparent free access without forced payment"
+      ],
       "pain_points": [
-        "App crashes during logging",
-        "Workout data sometimes disappears"      ],
+        "Donation prompts can feel like a paywall",
+        "Users may be skeptical of free access without clear value",
+        "Competing apps interrupt the experience with subscriptions or ads"
+      ],
       "context": [
-        "Logging activities immediately after workouts",
-        "Using the app during outdoor exercise"      ],
+        "Evaluating Medito after using or comparing paid meditation apps",
+        "Looking for a low-cost wellness tool that still feels polished",
+        "Willing to donate after value is proven"
+      ],
       "constraints": [
-        "Logging must be reliable",
-        "Data should not be lost"       ],
+        "Donation requests must be skippable",
+        "Session playback must remain available without ads or interruptions"
+      ],
       "evidence_reviews": [
-        "rev_12",
-        "rev_45"      ]
-    }  ] }
+        "3ad7a79f-15b2-4649-99e7-7dc87d6055c0",
+        "6199838b-67dd-440e-8aa0-db3de71635de",
+        "cf2c46d9-40ef-4143-9dcc-2fa0d968fd43"
+      ]
+    },
+    {
+      "id": "P2",
+      "name": "Bedtime Calming Listener",
+      "description": "Users who uses Medito at night to fall asleep or get back to sleep and needs bedtime content with uninterrupted playback.",
+      "derived_from_group": "G2",
+      "goals": [
+        "Fall asleep faster",
+        "Keep calming audio playing at bedtime",
+        "Choose content with minimal effort"
+      ],
+      "pain_points": [
+        "Playback delays or interruptions break the bedtime routine",
+        "Repeat playback can be interrupted by streak or completion prompts",
+        "One session is not always enough to fall asleep"
+      ],
+      "context": [
+        "Using the app in bed, often with the screen dimmed or off",
+        "Returning to the app after waking during the night",
+        "Sometimes putting on content for children or family members"
+      ],
+      "constraints": [
+        "Playback should continue without overly bright or blocking overlays at night",
+        "Sleep audio should be accessible with very few taps"
+      ],
+      "evidence_reviews": [
+        "f1c3bea3-31a7-4b4d-81e7-7aa1522e92a5",
+        "30fb9df7-7985-43a9-9617-5e3e73835796",
+        "5a7644b9-a2c8-46db-9201-bf0be8653089"
+      ]
+    },
+    {
+      "id": "P3",
+      "name": "Users who seek emotional reset",
+      "description": "Users turning to Medito during anxiety, stress, depression, grief, or panic who need calming support.",
+      "derived_from_group": "G3",
+      "goals": [
+        "Find sessions that match the current emotional need",
+        "Calm down quickly during difficult moments",
+        "Build focus and peace during stressful periods"
+      ],
+      "pain_points": [
+        "It can be hard to choose the right session under stress",
+        "Some guide voices do not feel calming to every listener",
+        "Users need support that feels dependable during crisis moments"
+      ],
+      "context": [
+        "Using the app during school, work, grief, or panic episodes",
+        "Sometimes trying meditation for emotional regulation for the first time",
+        "Needing guided help rather than open-ended meditation"
+      ],
+      "constraints": [
+        "Need-based content must be easy to identify",
+        "Calming support must be reachable without extra setup"
+      ],
+      "evidence_reviews": [
+        "598c4e53-e8d2-444a-a765-7f3ceb07bdf6",
+        "6bb7136c-a874-4ce3-a47e-adc6636057cb",
+        "0c2ff4d8-abcc-4ad1-9461-b63f25502d16"
+      ]
+    },
+    {
+      "id": "P4",
+      "name": "The Habit Builder",
+      "description": "For new or returning meditators using courses, short daily practice, and streaks to build consistency.",
+      "derived_from_group": "G4",
+      "goals": [
+        "Learn meditation step by step",
+        "Keep a daily practice going",
+        "Get reminded back into practice at the same time each day"
+      ],
+      "pain_points": [
+        "Beginners do not always know where to start",
+        "Consistency is harder without reminders or visible progress",
+        "Returning users want the app to point them to the next step"
+      ],
+      "context": [
+        "Starting meditation for the first time or after a long break",
+        "Using short daily sessions and beginner courses",
+        "Relying on streaks or challenges for motivation"
+      ],
+      "constraints": [
+        "Onboarding must point to the next lesson clearly",
+        "Habit-building tools should require minimal setup"
+      ],
+      "evidence_reviews": [
+        "59877fdc-6d06-4c13-97f9-8421738d61ae",
+        "59a3d4a2-d838-4938-94f1-69f5c5100595",
+        "eba38daa-6bbb-41a3-9480-820869cecbff"
+      ]
+    },
+    {
+      "id": "P5",
+      "name": "Power Users",
+      "description": "Frequent users who expect audio to function properly, search, and progress tracking to maintain after interruptions, updates, and device changes.",
+      "derived_from_group": "G5",
+      "goals": [
+        "Complete sessions without crashes or audio cutouts",
+        "Preserve streaks and course progress across devices",
+        "Use account actions without losing data"
+      ],
+      "pain_points": [
+        "Playback can crash, pause, or stop unexpectedly",
+        "Progress can disappear after unexpected crashes, updates, sign-in issues, or device changes",
+        "Search or sign-out can feel risky when data is involved"
+      ],
+      "context": [
+        "Using the app daily and across multiple devices",
+        "Listening with headphones, screen off, or offline downloads",
+        "Noticing regressions after updates because the app is part of a daily routine"
+      ],
+      "constraints": [
+        "Playback must remain stable through common interruptions",
+        "Synced progress must be recoverable after sign-in on another device"
+      ],
+      "evidence_reviews": [
+        "a81954ee-ab72-4c62-851c-f7681391f1ad",
+        "3a8afb5f-8f8c-46ca-ba59-d426af625697",
+        "b5e92785-6c1f-41d0-a4aa-c0419189e2c2"
+      ]
+    }
+  ]
+}

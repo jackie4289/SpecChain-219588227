@@ -2,11 +2,128 @@
   "groups": [
     {
       "group_id": "G1",
-      "theme": "App crashes during activity logging, THIS IS A AN EXAMPLE, PLEASE REMOVE ",
-      "review_ids": ["rev_12", "rev_33", "rev_45", "rev_89"],
+      "theme": "Users who are cost-conscious and rating only on Medito's free access, optional donations and ad-free experience.",
+      "review_ids": [
+        "3ad7a79f-15b2-4649-99e7-7dc87d6055c0",
+        "6199838b-67dd-440e-8aa0-db3de71635de",
+        "5465eaee-7f35-4ce2-b002-93c545ef4861",
+        "c4e5800d-f320-40c0-ad9d-037a667d6111",
+        "27178658-d633-4938-a84c-f65246464e96",
+        "cf2c46d9-40ef-4143-9dcc-2fa0d968fd43",
+        "6dfabfc4-e16e-4567-944c-ba99c9346f8f",
+        "2c4899e3-7ce7-4574-837b-7ae26a56d3a8",
+        "fa417e9c-8b6f-4313-8eb2-8ad04c204cba",
+        "487f60e5-950a-4b11-a4fc-e99d8bb66b45",
+        "08190b18-bd4f-4069-80f2-038c94266386",
+        "2dbdc292-8ab0-44da-b0bb-7aa73be3d05a",
+        "2e85e94c-f98f-47c6-b3c8-8829dc313ed8",
+        "7b516d01-5afc-4673-9d53-1ad7b9705a93",
+        "47258546-30c4-46c6-8ace-365370dfdf8a"
+      ],
       "example_reviews": [
-        "The app crashes every time I log my run.",
-        "Logging workouts causes the app to freeze."
+        "not free despite what \"Mike\" mentioned from a previous response. I would like to try it first but no thank you.",
+        "As a former user of Headspace, I can say that I truly enjoy using this beautiful and well-designed meditation app. It's also genuinely free and I'm never bombarded with ads!"
+      ]
+    },
+    {
+      "group_id": "G2",
+      "theme": "Users using Medito for sleep, bedtime, and uninterrupted calming audio",
+      "review_ids": [
+        "73c1ccfe-22e5-42d2-8bdf-d9bc2c7c3188",
+        "304681ad-7c84-4a06-a605-bd50c27b3d34",
+        "f1c3bea3-31a7-4b4d-81e7-7aa1522e92a5",
+        "7c2c0e1b-6b5b-4d6e-8fae-257a75c1786a",
+        "82db88d7-1ff1-469c-9aa1-b124644e171d",
+        "5a7644b9-a2c8-46db-9201-bf0be8653089",
+        "5def7031-1870-4c7c-8d50-507d7278f787",
+        "c1fb63b2-f4b7-415d-b85b-d690cc942a53",
+        "bb0303dd-e332-4d9e-b396-6124de000e31",
+        "30fb9df7-7985-43a9-9617-5e3e73835796",
+        "08894ae3-e924-4976-bf16-37096b074039",
+        "b3ce72f2-06ec-4da2-8e7b-b5825c34eaa1",
+        "03cde70b-2a7f-4953-85c2-88b9bc3f2d1b",
+        "d5ac4e91-ea76-4fe3-bbb6-b4917a497aae",
+        "6ddaf84f-5ece-4b16-a950-27fbbcfd3e61"
+      ],
+      "example_reviews": [
+        "An absolutely amazing app that's helped me a lot with my sleep pattern. The only thing I would add if I could is a feature to make a queue of multiple different meditations.",
+        "Can't get to sleep without it now."
+      ]
+    },
+    {
+      "group_id": "G3",
+      "theme": "Users seeking benefits from Medito to be relieved from anxiety, stress, depression, grief, or panic",
+      "review_ids": [
+        "bb17a883-3523-424e-8f97-9dd3de0e4741",
+        "aad29bf1-a857-4ec9-9d29-3fa2fa94e28b",
+        "598c4e53-e8d2-444a-a765-7f3ceb07bdf6",
+        "0c2ff4d8-abcc-4ad1-9461-b63f25502d16",
+        "eb2dc99a-a09d-493f-a71e-3cc3b6d52f72",
+        "1f121abe-af13-4144-9d08-8485e996bbd2",
+        "2ed558fb-3d00-44ba-863c-8b19a7137bb3",
+        "5eb9723e-4a3b-4a87-a94a-9208439a320c",
+        "2d423087-0384-40a3-b70c-85b9f52faf77",
+        "6bb7136c-a874-4ce3-a47e-adc6636057cb",
+        "4f7e4add-c210-4bfa-9173-34409b21f5de",
+        "e1235541-90db-4186-9034-b3af62fc04b0",
+        "f67424b9-8100-4c50-b5f3-89a995bac282",
+        "6878d6c6-f741-48d4-bfc0-d0ad4df49c98",
+        "cf9ba8ab-fa01-451f-8134-e411baced5c7"
+      ],
+      "example_reviews": [
+        "I have been using the app for almost 4 years. I use it mainly in case of a crisis situation and to control my emotions. This app helped me to deal with panic attacks more easily and even reduce them.",
+        "i love this app so much it has helped me a lot with anxiety and stress"
+      ]
+    },
+    {
+      "group_id": "G4",
+      "theme": "User experience from using the app as well as giving users a sense of progress and accomplishment through courses, streaks, and reminders to build a meditation habit",
+      "review_ids": [
+        "59877fdc-6d06-4c13-97f9-8421738d61ae",
+        "59a3d4a2-d838-4938-94f1-69f5c5100595",
+        "3d36e52e-a022-45d9-9fd2-7187c9cc48f3",
+        "eb1744ea-adbc-40a3-a724-73fd338554be",
+        "07d31de2-d356-4b76-bc5b-0e67997293a4",
+        "860e248f-50d3-45c9-99ad-6ac9941e4aa4",
+        "4bec1381-ad94-413f-88ec-a49438b8f52b",
+        "0c8c8007-e648-4c07-8a9e-e00bbf6e5aed",
+        "f5ba186c-b907-435f-9aaa-c7b975101f30",
+        "eba38daa-6bbb-41a3-9480-820869cecbff",
+        "54fd6029-e208-41dd-9c31-ba3759bfb946",
+        "628b17c1-06cb-40cd-84a8-2b79f61046bc",
+        "ca3380f8-6b20-48de-a5f4-3293bb2c4c75",
+        "72272c5d-e6c9-4f68-9622-d50a931709c3",
+        "1094d32f-563c-454b-8ab4-f2e46b8da520"
+      ],
+      "example_reviews": [
+        "Easy to start. Beginners course was very helpful for someone who has never meditated before.",
+        "a good app to make a habit of meditation"
+      ]
+    },
+    {
+      "group_id": "G5",
+      "theme": "Users who experience app issues such as crashes, audio problems and loss of progress",
+      "review_ids": [
+        "a81954ee-ab72-4c62-851c-f7681391f1ad",
+        "c46d2602-7094-409b-9eda-6699be423d34",
+        "d67ee88b-3421-4be2-a9e6-3a54689f6b70",
+        "7ac3234e-bd56-4924-a409-3416c9635ccd",
+        "0595aa68-046f-401b-b902-e5d159e87954",
+        "04243457-f7c6-4c82-8823-0677eb440406",
+        "3a8afb5f-8f8c-46ca-ba59-d426af625697",
+        "3d564cbb-335d-4095-80d1-30dec5406d93",
+        "ce0c4caa-e05e-45ea-b4cd-ec03e3593a2b",
+        "5daeefe5-b446-4cea-9652-bd02a970a8e5",
+        "afb75b0b-b7ab-4b7d-a008-01006db1deff",
+        "824d8567-7f40-470c-91d6-696f89a3faa0",
+        "8d1abd9a-53ed-4334-9ef2-2f9039b00771",
+        "b5e92785-6c1f-41d0-a4aa-c0419189e2c2",
+        "e7d43947-060f-43e6-8c16-7d571e7a6a11"
+      ],
+      "example_reviews": [
+        "I love medito, however recently I've had the problem where whenever I try to play a meditation, the app crashes on me.",
+        "how to get at 5 Stars except that I had to change devices and I lost track of my progress which is disappointing so no five stars"
       ]
     }
-  ]}
+  ]
+}

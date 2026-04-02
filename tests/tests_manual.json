@@ -1,16 +1,224 @@
-
 {
   "tests": [
     {
-      "test_id": "T_auto_1",
-      "requirement_id": "FR1",
-      "scenario": "Workout Logging Stability",
+      "test_id": "TM-01A",
+      "requirement_id": "FRM-01",
+      "scenario": "Close a donation prompt and still start the session",
       "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
+        "Open the app from a fresh install or while signed out",
+        "Pick a session that brings up a donation prompt",
+        "Close the prompt using the dismiss or 'Not now' option"
       ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "expected_result": "The prompt closes, and the same session is still available to start without payment or account creation."
+    },
+    {
+      "test_id": "TM-01B",
+      "requirement_id": "FRM-01",
+      "scenario": "Close a donation prompt while browsing",
+      "steps": [
+        "Open the home screen and start browsing normally",
+        "Bring up a donation prompt from one of the browsing surfaces",
+        "Close the prompt"
+      ],
+      "expected_result": "The user stays in the same browsing flow, and playback is still available."
+    },
+    {
+      "test_id": "TM-02A",
+      "requirement_id": "FRM-02",
+      "scenario": "Browse the app without seeing ads",
+      "steps": [
+        "Open the home screen",
+        "Spend about 15 minutes moving between the home screen, course list, and one course page",
+        "Watch the interface while browsing"
+      ],
+      "expected_result": "No display, video, or audio ad appears while browsing."
+    },
+    {
+      "test_id": "TM-02B",
+      "requirement_id": "FRM-02",
+      "scenario": "Finish a session without ad interruptions",
+      "steps": [
+        "Start any guided meditation session",
+        "Let the session play all the way through",
+        "Watch the player during playback and after the session ends"
+      ],
+      "expected_result": "No third-party ad appears before, during, or after the session."
+    },
+    {
+      "test_id": "TM-03A",
+      "requirement_id": "FRM-03",
+      "scenario": "Open the browse area for emotional needs",
+      "steps": [
+        "Open the app's browse or discovery area",
+        "Go to the section organized by needs or emotional states",
+        "Look at the category labels shown there"
+      ],
+      "expected_result": "Anxiety, Stress, Panic, Grief, Anger, and Sleep are all visible as separate categories."
+    },
+    {
+      "test_id": "TM-03B",
+      "requirement_id": "FRM-03",
+      "scenario": "Open one needs-based category",
+      "steps": [
+        "Open the needs-based browse area",
+        "Select the Anxiety category",
+        "Review the page that opens"
+      ],
+      "expected_result": "A list of sessions for anxiety support is displayed."
+    },
+    {
+      "test_id": "TM-04A",
+      "requirement_id": "FRM-04",
+      "scenario": "Save a session as a favorite",
+      "steps": [
+        "Open any session detail page or player screen",
+        "Use the favorite control to save that session",
+        "Return to the home screen"
+      ],
+      "expected_result": "The selected session is saved as a favorite and is available from the home screen."
+    },
+    {
+      "test_id": "TM-04B",
+      "requirement_id": "FRM-04",
+      "scenario": "Start a favorite quickly from home",
+      "steps": [
+        "Make sure there is at least one saved favorite",
+        "Open the home screen",
+        "Start that favorite using the controls shown there"
+      ],
+      "expected_result": "The favorite session starts in no more than two taps from the home screen."
+    },
+    {
+      "test_id": "TM-05A",
+      "requirement_id": "FRM-05",
+      "scenario": "Show the beginner course in order",
+      "steps": [
+        "Open the Beginner course",
+        "Look through the first several lessons",
+        "Check whether the lesson sequence is fixed"
+      ],
+      "expected_result": "The Beginner course shows its lessons in a fixed order."
+    },
+    {
+      "test_id": "TM-05B",
+      "requirement_id": "FRM-05",
+      "scenario": "Return to the next beginner lesson",
+      "steps": [
+        "Finish lesson 1 in the Beginner course",
+        "Leave the course screen",
+        "Open the Beginner course again"
+      ],
+      "expected_result": "Lesson 1 is marked complete, and lesson 2 is shown as the next lesson."
+    },
+    {
+      "test_id": "TM-06A",
+      "requirement_id": "FRM-06",
+      "scenario": "Set a daily reminder",
+      "steps": [
+        "Open the reminder settings",
+        "Set the reminder time to 21:00 local time",
+        "Turn the reminder on and save it"
+      ],
+      "expected_result": "The app saves the selected time and shows the reminder as enabled."
+    },
+    {
+      "test_id": "TM-06B",
+      "requirement_id": "FRM-06",
+      "scenario": "Turn a daily reminder off",
+      "steps": [
+        "Open reminder settings while a reminder is already enabled",
+        "Turn the reminder off",
+        "Save or exit settings"
+      ],
+      "expected_result": "The reminder is shown as disabled, and no active daily reminder remains scheduled."
+    },
+    {
+      "test_id": "TM-07A",
+      "requirement_id": "FRM-07",
+      "scenario": "Open the Sleep section",
+      "steps": [
+        "Open the home screen",
+        "Go to the Sleep section",
+        "Look at the subsections shown there"
+      ],
+      "expected_result": "Sleep meditations, sleep stories, and sleep sounds appear as separate sections."
+    },
+    {
+      "test_id": "TM-07B",
+      "requirement_id": "FRM-07",
+      "scenario": "Open each sleep subsection",
+      "steps": [
+        "Open the Sleep section",
+        "Open sleep meditations, then go back",
+        "Open sleep stories and sleep sounds"
+      ],
+      "expected_result": "Each subsection opens its own list of sleep-related content."
+    },
+    {
+      "test_id": "TM-08A",
+      "requirement_id": "FRM-08",
+      "scenario": "Let one sleep track roll into the next",
+      "steps": [
+        "Open any two sleep tracks",
+        "Add both of them to the queue",
+        "Start the first track and let it finish"
+      ],
+      "expected_result": "The second track starts automatically, and no blocking popup interrupts playback."
+    },
+    {
+      "test_id": "TM-08B",
+      "requirement_id": "FRM-08",
+      "scenario": "Repeat a sleep track without interruption",
+      "steps": [
+        "Open a sleep track",
+        "Turn on repeat",
+        "Let the track play until the end"
+      ],
+      "expected_result": "The same track starts again automatically, and no blocking streak or completion popup appears between repeats."
+    },
+    {
+      "test_id": "TM-09A",
+      "requirement_id": "FRM-09",
+      "scenario": "Keep playback going with the screen off",
+      "steps": [
+        "Start any guided session",
+        "Connect wired or Bluetooth headphones",
+        "Turn the screen off and wait 10 minutes"
+      ],
+      "expected_result": "The audio keeps playing for the full 10-minute window without the app crashing."
+    },
+    {
+      "test_id": "TM-09B",
+      "requirement_id": "FRM-09",
+      "scenario": "Come back to the app after screen-off playback",
+      "steps": [
+        "Start any guided session",
+        "Turn the screen off while keeping the headphones connected",
+        "Reopen the app after 10 minutes"
+      ],
+      "expected_result": "The session is still active, the app has not crashed, and the playback controls still respond."
+    },
+    {
+      "test_id": "TM-10A",
+      "requirement_id": "FRM-10",
+      "scenario": "See progress carry over to another device",
+      "steps": [
+        "Sign in with the same account on device A and device B",
+        "Complete one course lesson on device A",
+        "Open the same course on device B and wait for sync"
+      ],
+      "expected_result": "Within 60 seconds, device B shows the completed lesson and the updated streak count."
+    },
+    {
+      "test_id": "TM-10B",
+      "requirement_id": "FRM-10",
+      "scenario": "Get progress back after signing in again",
+      "steps": [
+        "Sign in to an account that already has a streak and completed lessons",
+        "Sign out and then sign back in with the same account",
+        "Open the progress or course screen and wait for sync"
+      ],
+      "expected_result": "Within 60 seconds, the earlier streak count and completed lessons are restored."
     }
   ]
 }
