@@ -3,225 +3,220 @@
     {
       "test_id": "T_auto_1",
       "requirement_id": "FR_auto_1",
-      "scenario": "Access meditation content without ads",
+      "scenario": "Access meditation content as a new user",
       "steps": [
         "Launch the app",
-        "Navigate to meditation content section",
-        "Browse through multiple meditation sessions"
+        "Browse meditation content without logging in"
       ],
-      "expected_result": "No ads are displayed throughout the meditation content"
+      "expected_result": "No paywall or subscription request appears"
     },
     {
       "test_id": "T_auto_2",
       "requirement_id": "FR_auto_1",
-      "scenario": "Verify ad absence in specific meditation session",
+      "scenario": "Access meditation content after logging in",
       "steps": [
-        "Open a specific meditation session",
-        "Play the meditation session",
-        "Observe the session for ad interruptions"
+        "Log in to the app",
+        "Navigate to meditation content section"
       ],
-      "expected_result": "The meditation session plays without any ad interruptions"
+      "expected_result": "All meditation content is accessible without any paywall or subscription prompt"
     },
     {
       "test_id": "T_auto_3",
       "requirement_id": "FR_auto_2",
-      "scenario": "Access meditation content without subscription",
+      "scenario": "User navigates to meditation content",
       "steps": [
         "Launch the app",
-        "Navigate to meditation content section",
-        "Browse through meditation sessions"
+        "Navigate to meditation section",
+        "Select a meditation session"
       ],
-      "expected_result": "No subscription or payment prompts are displayed"
+      "expected_result": "No advertisements are visible during the meditation session"
     },
     {
       "test_id": "T_auto_4",
       "requirement_id": "FR_auto_2",
-      "scenario": "Verify free access to all meditation content",
+      "scenario": "User uses app's meditation content for an extended period",
       "steps": [
-        "Open the app as a new user",
-        "Explore all available meditation categories",
-        "Attempt to access a meditation session"
+        "Launch the app",
+        "Navigate to meditation section",
+        "Select a meditation session and use it for 30 minutes"
       ],
-      "expected_result": "All meditation content is accessible without any payment or subscription requests"
+      "expected_result": "No advertisements are displayed during or after the extended meditation session"
     },
     {
       "test_id": "T_auto_5",
       "requirement_id": "FR_auto_3",
-      "scenario": "Sleep content plays uninterrupted when device screen is locked",
+      "scenario": "Continuous playback of sleep content for 8 hours",
       "steps": [
-        "Launch Medito app and start playing sleep content",
-        "Lock device screen",
-        "Verify sleep content continues playing"
+        "Start sleep content",
+        "Wait for 8 hours",
+        "Verify sleep content is still playing"
       ],
-      "expected_result": "Sleep content continues playing without interruption or pause"
+      "expected_result": "Sleep content continues to play without interruption"
     },
     {
       "test_id": "T_auto_6",
       "requirement_id": "FR_auto_3",
-      "scenario": "Sleep content plays uninterrupted when app is minimized",
+      "scenario": "Manual stop of sleep content",
       "steps": [
-        "Launch Medito app and start playing sleep content",
-        "Minimize Medito app",
-        "Verify sleep content continues playing"
+        "Start sleep content",
+        "Wait for 1 hour",
+        "Manually stop sleep content"
       ],
-      "expected_result": "Sleep content continues playing without interruption or pause"
+      "expected_result": "Sleep content stops immediately"
     },
     {
       "test_id": "T_auto_7",
       "requirement_id": "FR_auto_4",
-      "scenario": "Queued playback of two sleep tracks",
+      "scenario": "Valid sleep story duration",
       "steps": [
-        "Queue two sleep tracks",
-        "Play the first track",
-        "Wait for the first track to end"
+        "Select a sleep story",
+        "Check the duration of the sleep story"
       ],
-      "expected_result": "The second track starts automatically without interruption"
+      "expected_result": "The duration is at least 30 minutes"
     },
     {
       "test_id": "T_auto_8",
       "requirement_id": "FR_auto_4",
-      "scenario": "Repeat playback of one sleep track",
+      "scenario": "Edge case sleep story duration",
       "steps": [
-        "Play a sleep track with repeat on",
-        "Wait for the track to end"
+        "Select a sleep story with duration exactly 30 minutes",
+        "Verify the story plays for the full duration"
       ],
-      "expected_result": "The same track restarts automatically without a blocking popup"
+      "expected_result": "The story plays without interruption for the full 30 minutes"
     },
     {
       "test_id": "T_auto_9",
       "requirement_id": "FR_auto_5",
-      "scenario": "Meditation option is presented immediately on app launch",
+      "scenario": "Valid meditation session access",
       "steps": [
-        "Launch Medito app",
-        "Wait for 3 seconds",
-        "Verify meditation option on screen"
+        "Log in as a user",
+        "Navigate to meditation sessions",
+        "Select a meditation session"
       ],
-      "expected_result": "Meditation option is visible on the screen within 3 seconds"
+      "expected_result": "The meditation session starts without ads or payment requests."
     },
     {
       "test_id": "T_auto_10",
       "requirement_id": "FR_auto_5",
-      "scenario": "Meditation option is not presented immediately on app launch",
+      "scenario": "Guest user access",
       "steps": [
-        "Launch Medito app",
-        "Wait for 4 seconds",
-        "Verify meditation option on screen"
+        "Open the app as a guest",
+        "Navigate to meditation sessions",
+        "Select a meditation session"
       ],
-      "expected_result": "Meditation option is not visible on the screen after 3 seconds"
+      "expected_result": "The meditation session starts without ads or payment requests."
     },
     {
       "test_id": "T_auto_11",
       "requirement_id": "FR_auto_6",
-      "scenario": "Valid meditation options display",
+      "scenario": "Reopen a favorite support session with one favorite saved",
       "steps": [
-        "Launch Medito app",
-        "Navigate to main screen"
+        "Save a support session as a favorite",
+        "Go to the home screen",
+        "Tap on the favorite session"
       ],
-      "expected_result": "At least 5 different meditation options are displayed"
+      "expected_result": "The support session is reopened"
     },
     {
       "test_id": "T_auto_12",
       "requirement_id": "FR_auto_6",
-      "scenario": "Edge case - No internet connection",
+      "scenario": "Reopen a favorite support session with multiple favorites saved",
       "steps": [
-        "Disable internet connection",
-        "Launch Medito app",
-        "Navigate to main screen"
+        "Save multiple support sessions as favorites",
+        "Go to the home screen",
+        "Tap on a favorite session"
       ],
-      "expected_result": "At least 5 different meditation options are displayed"
+      "expected_result": "The selected support session is reopened"
     },
     {
       "test_id": "T_auto_13",
       "requirement_id": "FR_auto_7",
-      "scenario": "Valid user login",
+      "scenario": "User has a meditation streak",
       "steps": [
-        "Log in with valid credentials",
-        "Navigate to home screen"
+        "Log in to the app",
+        "Go to the home screen"
       ],
-      "expected_result": "Displays current meditation streak and total number of meditations within 2 seconds"
+      "expected_result": "The user's current meditation streak is displayed on the home screen"
     },
     {
       "test_id": "T_auto_14",
       "requirement_id": "FR_auto_7",
-      "scenario": "User has 0 meditations",
+      "scenario": "User has no meditation streak",
       "steps": [
-        "Log in with valid credentials of a user with 0 meditations",
-        "Navigate to home screen"
+        "Log in to the app",
+        "Ensure user has not meditated recently",
+        "Go to the home screen"
       ],
-      "expected_result": "Displays 0 for both meditation streak and total number of meditations within 2 seconds"
+      "expected_result": "The user's meditation streak is displayed as 0 on the home screen"
     },
     {
       "test_id": "T_auto_15",
       "requirement_id": "FR_auto_8",
-      "scenario": "User completes a meditation course on one device and checks progress on another",
+      "scenario": "User completes a meditation course",
       "steps": [
-        "Log in on Device 1",
-        "Enroll in a meditation course",
-        "Complete a session",
-        "Log out",
-        "Log in on Device 2 with the same account",
-        "Check course progress"
+        "Log in to the app",
+        "Start a meditation course",
+        "Complete the course"
       ],
-      "expected_result": "The course completion status is displayed consistently on Device 2"
+      "expected_result": "The completed course is displayed in the list of completed courses with 100% progress"
     },
     {
       "test_id": "T_auto_16",
       "requirement_id": "FR_auto_8",
-      "scenario": "User logs in on multiple devices and checks course progress",
+      "scenario": "User partially completes a meditation course",
       "steps": [
-        "Log in on Device 1 and Device 2 with the same account",
-        "Enroll in a meditation course on Device 1",
-        "Complete a session on Device 1",
-        "Check course progress on Device 2"
+        "Log in to the app",
+        "Start a meditation course",
+        "Complete 50% of the course"
       ],
-      "expected_result": "The updated course completion status is reflected on Device 2 in real-time"
+      "expected_result": "The course is displayed in the list of courses with 50% progress"
     },
     {
       "test_id": "T_auto_17",
       "requirement_id": "FR_auto_9",
-      "scenario": "Resume meditation playback after pausing and relaunching the app",
+      "scenario": "Successful login on primary device",
       "steps": [
-        "Launch the app and start a meditation",
-        "Pause the meditation playback",
-        "Close the app",
-        "Relaunch the app"
+        "Launch Medito app on primary device",
+        "Enter valid credentials",
+        "Tap login button"
       ],
-      "expected_result": "Meditation playback resumes from the exact point it was paused"
+      "expected_result": "User is logged in and sees meditation progress on primary device"
     },
     {
       "test_id": "T_auto_18",
       "requirement_id": "FR_auto_9",
-      "scenario": "Resume meditation playback after pausing, relaunching, and verifying accuracy",
+      "scenario": "Login on secondary device with same credentials",
       "steps": [
-        "Launch the app and start a meditation",
-        "Pause the meditation playback at a specific timestamp",
-        "Close the app",
-        "Relaunch the app",
-        "Verify the meditation playback resumes within 1 second of the paused timestamp"
+        "Launch Medito app on secondary device",
+        "Enter same valid credentials",
+        "Tap login button"
       ],
-      "expected_result": "Meditation playback resumes within 1 second of accuracy from the paused timestamp"
+      "expected_result": "User is logged in and sees same meditation progress on secondary device as on primary device"
     },
     {
       "test_id": "T_auto_19",
       "requirement_id": "FR_auto_10",
-      "scenario": "App update preserves login status",
+      "scenario": "Successful update and meditation playback",
       "steps": [
-        "Log in to the app",
-        "Update the app to the latest version",
-        "Restart the app"
+        "Install Medito app",
+        "Update Medito app to latest version",
+        "Launch Medito app",
+        "Select a meditation session",
+        "Start playing meditation session"
       ],
-      "expected_result": "The user remains logged in and no login prompt appears"
+      "expected_result": "Meditation session plays without interruption or crash for at least 10 minutes"
     },
     {
       "test_id": "T_auto_20",
       "requirement_id": "FR_auto_10",
-      "scenario": "Device restart preserves login status",
+      "scenario": "Background update and uninterrupted playback",
       "steps": [
-        "Log in to the app",
-        "Restart the device",
-        "Launch the app again"
+        "Install Medito app",
+        "Start playing meditation session",
+        "Update Medito app to latest version in background",
+        "Continue playing meditation session for 10 minutes"
       ],
-      "expected_result": "The user remains logged in and no login prompt appears"
+      "expected_result": "Meditation session continues to play without interruption or crash"
     }
   ]
 }

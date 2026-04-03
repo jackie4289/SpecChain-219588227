@@ -1,61 +1,61 @@
 # Automated Specification
 
 ## Requirement ID: FR_auto_1
-- Description: [The app allows users to access all meditation content without displaying ads.]
+- Description: [The app allows users to access all meditation content without being prompted to pay or subscribe.]
 - Source Persona: [P_auto_1 - Mindful Seeker]
 - Traceability: [Derived from review group A1]
-- Acceptance Criteria: [The app does not display any ads throughout its content sections.]
+- Acceptance Criteria: [A user can access all meditation content without encountering any paywall or subscription request.]
 
 ## Requirement ID: FR_auto_2
-- Description: [The app offers a free version that does not require a subscription or payment for access to meditation content.]
+- Description: [The app does not display any advertisements to users.]
 - Source Persona: [P_auto_1 - Mindful Seeker]
 - Traceability: [Derived from review group A1]
-- Acceptance Criteria: [Users can access all meditation content without being prompted to subscribe or pay.]
+- Acceptance Criteria: [No ads are visible to users while navigating or using the app's meditation content.]
 
 ## Requirement ID: FR_auto_3
-- Description: [The Medito app plays sleep content without interruption when the device screen is locked or the app is minimized.]
+- Description: [The system plays sleep content continuously without interruption until the user manually stops it.]
 - Source Persona: [P_auto_2 - Insomniac]
 - Traceability: [Derived from review group A2]
-- Acceptance Criteria: [When the device screen is locked or the app is minimized, the sleep content continues playing without interruption or pause.]
+- Acceptance Criteria: [The sleep content continues to play for at least 8 hours without stopping or interrupting with ads.]
 
 ## Requirement ID: FR_auto_4
-- Description: [Sleep audio should support repeat and queued playback without interrupting the listener between tracks.]
+- Description: [The system provides sleep stories that are at least 30 minutes long.]
 - Source Persona: [P_auto_2 - Insomniac]
 - Traceability: [Derived from review group A2]
-- Acceptance Criteria: [Given someone queues two sleep tracks or turns on repeat for one track, when the first track ends, then the next track starts or the same track restarts automatically without a blocking popup.]
+- Acceptance Criteria: [At least 80% of the sleep stories in the system are 30 minutes or longer in duration.]
 
 ## Requirement ID: FR_auto_5
-- Description: [The Medito app immediately presents a meditation option to the user upon launch.]
+- Description: [The system provides a free and ad-free meditation session for the user.]
 - Source Persona: [P_auto_3 - Anxious Individual]
 - Traceability: [Derived from review group A3]
-- Acceptance Criteria: [Within 3 seconds of launching the app, a meditation option is visible on the screen.]
+- Acceptance Criteria: [The user can access a meditation session without seeing any ads or being asked to pay.]
 
 ## Requirement ID: FR_auto_6
-- Description: [The Medito app provides a variety of meditation options for the user to choose from.]
+- Description: [The app should let people reopen helpful support sessions from a saved favorites list in no more than two taps from the home screen.]
 - Source Persona: [P_auto_3 - Anxious Individual]
 - Traceability: [Derived from review group A3]
-- Acceptance Criteria: [The app displays at least 5 different meditation options on the main screen.]
+- Acceptance Criteria: [Given someone has saved at least one session as a favorite, when they open the home screen, then a favorite session can be started in no more than two taps.]
 
 ## Requirement ID: FR_auto_7
-- Description: [The system displays a user's current meditation streak and total number of meditations completed.]
+- Description: [The system displays the user's current meditation streak.]
 - Source Persona: [P_auto_4 - Mindfulness Seeker]
 - Traceability: [Derived from review group A4]
-- Acceptance Criteria: [The user's meditation streak and total number of meditations are accurately displayed on the app's home screen within 2 seconds of logging in.]
+- Acceptance Criteria: [The user's meditation streak is displayed on the home screen of the app.]
 
 ## Requirement ID: FR_auto_8
-- Description: [The system allows users to track their progress through meditation courses across multiple devices.]
+- Description: [The system allows the user to track their progress through meditation courses.]
 - Source Persona: [P_auto_4 - Mindfulness Seeker]
 - Traceability: [Derived from review group A4]
-- Acceptance Criteria: [A user's course completion status is synced and displayed consistently across all devices after logging in with the same account credentials.]
+- Acceptance Criteria: [The app displays a list of completed meditation courses and the user's progress through each course.]
 
 ## Requirement ID: FR_auto_9
-- Description: [The app resumes meditation playback from where it was paused when the user returns to the app.]
+- Description: [The Medito app allows users to log in and access their meditation progress on multiple devices without interruption.]
 - Source Persona: [P_auto_5 - Frustrated Medito User]
 - Traceability: [Derived from review group A5]
-- Acceptance Criteria: [When the app is relaunched after being paused, the meditation playback resumes from the exact point it was paused, within 1 second of accuracy.]
+- Acceptance Criteria: [A user can log in to the Medito app on a second device and see the same meditation progress as on their primary device.]
 
 ## Requirement ID: FR_auto_10
-- Description: [The app retains the user's login status across updates and device restarts.]
+- Description: [The Medito app continues to function and play meditation sessions without crashing or stopping after updates.]
 - Source Persona: [P_auto_5 - Frustrated Medito User]
 - Traceability: [Derived from review group A5]
-- Acceptance Criteria: [The user's login status is preserved after an app update or device restart, and the user is not required to log in again.]
+- Acceptance Criteria: [After updating the Medito app, a user can play a meditation session without interruption or crash for at least 10 minutes.]

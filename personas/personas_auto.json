@@ -6,20 +6,20 @@
       "description": "A user comparing meditation apps who cares most about real free access, optional donations, and an experience without ads or paywalls.",
       "derived_from_group": "A1",
       "goals": [
-        "Establish a consistent meditation practice",
+        "Establish a meditation practice",
         "Improve mental well-being"
       ],
       "pain_points": [
-        "Frustrated with ads and subscription-based models in meditation apps",
-        "Concerned about affordability and accessibility of meditation resources"
+        "Ad-heavy or subscription-based meditation apps",
+        "Lack of trustworthy free resources"
       ],
       "context": [
-        "Currently using or interested in using meditation apps",
+        "Seeking alternative to paid or ad-heavy meditation apps",
         "Appreciates non-profit driven initiatives"
       ],
       "constraints": [
-        "Limited budget for meditation app subscriptions",
-        "Prefers simple and clean app interface"
+        "Limited budget for meditation apps",
+        "Frustrated with ads and subscriptions in meditation apps"
       ],
       "evidence_reviews": [
         "61d66d91-9fe8-4192-acc9-5761c30e527d",
@@ -38,18 +38,16 @@
         "Reduce anxiety and stress"
       ],
       "pain_points": [
-        "Difficulty navigating to sleep content",
         "Short sleep stories",
-        "Interruptions while falling asleep"
+        "Difficulty navigating apps with ads"
       ],
       "context": [
-        "At night, before sleep",
-        "Using a mobile device"
+        "At bedtime",
+        "When waking up in the night"
       ],
       "constraints": [
-        "No ads",
-        "Easy to use",
-        "Variety of sleep content"
+        "Limited by short sleep story duration",
+        "Prefer ad-free experience"
       ],
       "evidence_reviews": [
         "858fc638-f063-45ed-ae70-2ecee192e6e4",
@@ -69,8 +67,8 @@
       ],
       "pain_points": [
         "Dealing with panic attacks",
-        "Struggling with depression",
-        "Seeking effective stress management"
+        "Struggling with anxiety and depression",
+        "Seeking effective stress relief"
       ],
       "context": [
         "Daily life stress and anxiety",
@@ -78,9 +76,9 @@
         "Seeking free and accessible resources"
       ],
       "constraints": [
-        "Limited by app usability issues",
-        "Appreciates free and ad-free resources",
-        "Seeks diverse meditation options"
+        "Free and ad-free resources",
+        "Accessible and easy to use",
+        "Effective and helpful content"
       ],
       "evidence_reviews": [
         "552e9f01-c7da-4b0a-8da7-5e57acf95dd5",
@@ -91,27 +89,26 @@
     {
       "id": "P_auto_4",
       "name": "Mindfulness Seeker",
-      "description": "A new or returning meditator who relies on courses, reminders, and visible progress to build a steady meditation habit.",
+      "description": "Individual seeking to establish a daily meditation habit",
       "derived_from_group": "A4",
       "goals": [
-        "Establish a daily meditation habit",
+        "Establish a daily meditation routine",
         "Improve mindfulness and calmness",
-        "Progress through meditation courses"
+        "Progress through meditation courses and challenges"
       ],
       "pain_points": [
-        "Difficulty maintaining streaks due to app issues or personal inconsistency",
-        "Limited visibility into course progress across devices",
-        "Challenges in finding suitable meditation content for their needs"
+        "Difficulty maintaining streaks and tracking progress",
+        "Limited syncing of streaks across devices",
+        "Some features not functioning as expected after updates"
       ],
       "context": [
-        "Using the app daily or nearly daily",
-        "May have tried other meditation apps or practices before",
-        "Seeking a sense of community and support through the app"
+        "Using the app daily for meditation and mindfulness",
+        "Appreciating features like courses, streak tracking, and timer"
       ],
       "constraints": [
-        "May have limited time for meditation each day",
-        "Prefers a user-friendly and accessible app experience",
-        "Values free or affordable meditation resources"
+        "Need for easy-to-use interface for beginners",
+        "Importance of accessibility and free features",
+        "Desire for streak tracking and progress monitoring"
       ],
       "evidence_reviews": [
         "83a267b5-1a68-4979-8bc4-6ee5bad78984",
@@ -125,21 +122,21 @@
       "description": "A frequent user who expects playback, search, login, and progress to keep working across updates, devices, and everyday interruptions.",
       "derived_from_group": "A5",
       "goals": [
-        "Resume meditation progress seamlessly",
-        "Access app features without interruptions"
+        "To have a stable and functional meditation app",
+        "To track progress seamlessly across devices"
       ],
       "pain_points": [
-        "App crashes or freezes",
-        "Update process issues",
-        "Playback stability problems"
+        "App crashes or stops working after updates",
+        "Inability to download sessions",
+        "Issues with search functionality"
       ],
       "context": [
-        "Regularly uses the app for meditation",
-        "Expects updates to improve app experience"
+        "Regularly uses the Medito app for meditation",
+        "Expects updates to improve the app experience"
       ],
       "constraints": [
-        "Limited by app crashes and update issues",
-        "Frustrated by lack of progress continuity"
+        "Needs to manually check for updates",
+        "Experiences disruptions in meditation practice due to app issues"
       ],
       "evidence_reviews": [
         "b46ccd9a-3ef1-4195-8d93-02a14700845d",
