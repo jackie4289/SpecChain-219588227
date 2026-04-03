@@ -6,24 +6,20 @@
       "description": "A user comparing meditation apps who cares most about real free access, optional donations, and an experience without ads or paywalls.",
       "derived_from_group": "A1",
       "goals": [
-        "Establish a meditation practice",
-        "Manage stress and anxiety",
-        "Improve sleep quality"
+        "Establish a consistent meditation practice",
+        "Improve mental well-being"
       ],
       "pain_points": [
-        "Ad-heavy meditation apps",
-        "Subscription-based models",
-        "Lack of free high-quality resources"
+        "Frustrated with ads and subscription-based models in meditation apps",
+        "Concerned about affordability and accessibility of meditation resources"
       ],
       "context": [
-        "Seeking alternative to paid meditation apps",
-        "Appreciates the value of free resources",
-        "Willing to support non-profit initiatives"
+        "Currently using or interested in using meditation apps",
+        "Appreciates non-profit driven initiatives"
       ],
       "constraints": [
-        "Limited budget",
-        "Seeks simplicity and ease of use",
-        "Values ad-free experience"
+        "Limited budget for meditation app subscriptions",
+        "Prefers simple and clean app interface"
       ],
       "evidence_reviews": [
         "61d66d91-9fe8-4192-acc9-5761c30e527d",
@@ -39,20 +35,21 @@
       "goals": [
         "Fall asleep faster",
         "Improve sleep quality",
-        "Reduce stress and anxiety"
+        "Reduce anxiety and stress"
       ],
       "pain_points": [
-        "Difficulty falling asleep",
-        "Waking up during the night",
-        "Limited access to effective sleep aids"
+        "Difficulty navigating to sleep content",
+        "Short sleep stories",
+        "Interruptions while falling asleep"
       ],
       "context": [
-        "Uses app at bedtime",
-        "May have anxiety or stress that affects sleep"
+        "At night, before sleep",
+        "Using a mobile device"
       ],
       "constraints": [
-        "Prefers ad-free experience",
-        "Values ease of use and smooth app performance"
+        "No ads",
+        "Easy to use",
+        "Variety of sleep content"
       ],
       "evidence_reviews": [
         "858fc638-f063-45ed-ae70-2ecee192e6e4",
@@ -72,8 +69,8 @@
       ],
       "pain_points": [
         "Dealing with panic attacks",
-        "Struggling with anxiety and depression",
-        "Seeking effective stress relief"
+        "Struggling with depression",
+        "Seeking effective stress management"
       ],
       "context": [
         "Daily life stress and anxiety",
@@ -81,9 +78,9 @@
         "Seeking free and accessible resources"
       ],
       "constraints": [
-        "Free and ad-free resources preferred",
-        "Easy to use and simple interface",
-        "Variety of meditation options and features"
+        "Limited by app usability issues",
+        "Appreciates free and ad-free resources",
+        "Seeks diverse meditation options"
       ],
       "evidence_reviews": [
         "552e9f01-c7da-4b0a-8da7-5e57acf95dd5",
@@ -94,26 +91,27 @@
     {
       "id": "P_auto_4",
       "name": "Mindfulness Seeker",
-      "description": "Individual seeking to establish a daily meditation habit",
+      "description": "A new or returning meditator who relies on courses, reminders, and visible progress to build a steady meditation habit.",
       "derived_from_group": "A4",
       "goals": [
-        "Establish a consistent daily meditation practice",
+        "Establish a daily meditation habit",
         "Improve mindfulness and calmness",
-        "Progress through meditation courses and challenges"
+        "Progress through meditation courses"
       ],
       "pain_points": [
-        "Difficulty maintaining streaks and tracking progress",
-        "Limited synchronization of streaks across devices",
-        "Some features not functioning as expected after updates"
+        "Difficulty maintaining streaks due to app issues or personal inconsistency",
+        "Limited visibility into course progress across devices",
+        "Challenges in finding suitable meditation content for their needs"
       ],
       "context": [
-        "Using the app daily for meditation and mindfulness",
-        "Appreciating features such as courses, streak tracking, and timer"
+        "Using the app daily or nearly daily",
+        "May have tried other meditation apps or practices before",
+        "Seeking a sense of community and support through the app"
       ],
       "constraints": [
-        "Need for easy-to-use features for beginners",
-        "Importance of accessibility and free usage options",
-        "Desire for seamless synchronization across devices"
+        "May have limited time for meditation each day",
+        "Prefers a user-friendly and accessible app experience",
+        "Values free or affordable meditation resources"
       ],
       "evidence_reviews": [
         "83a267b5-1a68-4979-8bc4-6ee5bad78984",
@@ -128,19 +126,20 @@
       "derived_from_group": "A5",
       "goals": [
         "Resume meditation progress seamlessly",
-        "Access updated features without issues"
+        "Access app features without interruptions"
       ],
       "pain_points": [
-        "App crashes after updates",
-        "Features not working as expected (e.g., search, download, tracking)"
+        "App crashes or freezes",
+        "Update process issues",
+        "Playback stability problems"
       ],
       "context": [
-        "Recently updated the app",
-        "Uses the app regularly for meditation"
+        "Regularly uses the app for meditation",
+        "Expects updates to improve app experience"
       ],
       "constraints": [
-        "Cannot access updated features due to app instability",
-        "Experiences frustration with repeated issues"
+        "Limited by app crashes and update issues",
+        "Frustrated by lack of progress continuity"
       ],
       "evidence_reviews": [
         "b46ccd9a-3ef1-4195-8d93-02a14700845d",
