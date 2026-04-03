@@ -41,6 +41,25 @@ Cleaning steps:
 - `reflection/`: final reflection
 - `src/`: executable Python scripts for validation, cleaning, generation, and metrics
 
+## Needed Libraries
+
+Use Python `3.11+` and install the project dependencies with:
+
+```powershell
+python -m pip install google-play-scraper numpy scikit-learn nltk num2words
+```
+
+Libraries used by the repo:
+- `google-play-scraper` for collecting Google Play reviews in `src/01_collect_or_import.py`
+- `numpy` for clustering support in the automated pipeline
+- `scikit-learn` for TF-IDF vectorization and cosine similarity
+- `nltk` for stopword removal and lemmatization during cleaning
+- `num2words` for numeric text normalization during cleaning
+
+Notes:
+- `nltk` and `num2words` have fallbacks in the code, but installing them is recommended for the intended pipeline behavior.
+- Standard library modules such as `json`, `argparse`, `pathlib`, `re`, `subprocess`, and `urllib` are used directly and do not need separate installation.
+
 ## Exact Commands
 
 Validate the repository structure:
