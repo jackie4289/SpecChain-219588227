@@ -1,0 +1,152 @@
+{
+  "personas": [
+    {
+      "id": "P_auto_1",
+      "name": "Mindful Seeker",
+      "description": "A user comparing meditation apps who cares most about real free access, optional donations, and an experience without ads or paywalls.",
+      "derived_from_group": "A1",
+      "goals": [
+        "Establish a meditation practice",
+        "Manage stress and anxiety",
+        "Improve sleep quality"
+      ],
+      "pain_points": [
+        "Ad-heavy meditation apps",
+        "Subscription-based models",
+        "Lack of free high-quality resources"
+      ],
+      "context": [
+        "Seeking alternative to paid meditation apps",
+        "Appreciates the value of free resources",
+        "Willing to support non-profit initiatives"
+      ],
+      "constraints": [
+        "Limited budget",
+        "Seeks simplicity and ease of use",
+        "Values ad-free experience"
+      ],
+      "evidence_reviews": [
+        "61d66d91-9fe8-4192-acc9-5761c30e527d",
+        "7b516d01-5afc-4673-9d53-1ad7b9705a93",
+        "0b8eddda-28ba-4438-955d-b7dc17a38031"
+      ]
+    },
+    {
+      "id": "P_auto_2",
+      "name": "Insomniac",
+      "description": "A user who opens Medito at bedtime and depends on sleep content, calm audio, and playback that stays out of the way.",
+      "derived_from_group": "A2",
+      "goals": [
+        "Fall asleep faster",
+        "Improve sleep quality",
+        "Reduce stress and anxiety"
+      ],
+      "pain_points": [
+        "Difficulty falling asleep",
+        "Waking up during the night",
+        "Limited access to effective sleep aids"
+      ],
+      "context": [
+        "Uses app at bedtime",
+        "May have anxiety or stress that affects sleep"
+      ],
+      "constraints": [
+        "Prefers ad-free experience",
+        "Values ease of use and smooth app performance"
+      ],
+      "evidence_reviews": [
+        "858fc638-f063-45ed-ae70-2ecee192e6e4",
+        "de02a4ad-667b-4243-98e3-72a6a9c0ca7b",
+        "ac83837f-d98d-4fff-9c0b-c85917f19626"
+      ]
+    },
+    {
+      "id": "P_auto_3",
+      "name": "Anxious Individual",
+      "description": "A user who turns to Medito during anxiety, stress, grief, panic, or emotional overload and needs targeted support quickly.",
+      "derived_from_group": "A3",
+      "goals": [
+        "Reduce anxiety and stress",
+        "Improve mental health",
+        "Achieve emotional well-being"
+      ],
+      "pain_points": [
+        "Dealing with panic attacks",
+        "Struggling with anxiety and depression",
+        "Seeking effective stress relief"
+      ],
+      "context": [
+        "Daily life stress and anxiety",
+        "Mental health journey",
+        "Seeking free and accessible resources"
+      ],
+      "constraints": [
+        "Free and ad-free resources preferred",
+        "Easy to use and simple interface",
+        "Variety of meditation options and features"
+      ],
+      "evidence_reviews": [
+        "552e9f01-c7da-4b0a-8da7-5e57acf95dd5",
+        "f15c7447-b461-47d5-9039-3286f2ac9329",
+        "aa418060-2724-4591-bfd1-3a289d0c338e"
+      ]
+    },
+    {
+      "id": "P_auto_4",
+      "name": "Mindfulness Seeker",
+      "description": "Individual seeking to establish a daily meditation habit",
+      "derived_from_group": "A4",
+      "goals": [
+        "Establish a consistent daily meditation practice",
+        "Improve mindfulness and calmness",
+        "Progress through meditation courses and challenges"
+      ],
+      "pain_points": [
+        "Difficulty maintaining streaks and tracking progress",
+        "Limited synchronization of streaks across devices",
+        "Some features not functioning as expected after updates"
+      ],
+      "context": [
+        "Using the app daily for meditation and mindfulness",
+        "Appreciating features such as courses, streak tracking, and timer"
+      ],
+      "constraints": [
+        "Need for easy-to-use features for beginners",
+        "Importance of accessibility and free usage options",
+        "Desire for seamless synchronization across devices"
+      ],
+      "evidence_reviews": [
+        "83a267b5-1a68-4979-8bc4-6ee5bad78984",
+        "ff2cd751-c385-4b2b-92f4-f088f752efe4",
+        "6a3877bd-af68-424e-a937-2801b62fa6cb"
+      ]
+    },
+    {
+      "id": "P_auto_5",
+      "name": "Frustrated Medito User",
+      "description": "A frequent user who expects playback, search, login, and progress to keep working across updates, devices, and everyday interruptions.",
+      "derived_from_group": "A5",
+      "goals": [
+        "Resume meditation progress seamlessly",
+        "Access updated features without issues"
+      ],
+      "pain_points": [
+        "App crashes after updates",
+        "Features not working as expected (e.g., search, download, tracking)"
+      ],
+      "context": [
+        "Recently updated the app",
+        "Uses the app regularly for meditation"
+      ],
+      "constraints": [
+        "Cannot access updated features due to app instability",
+        "Experiences frustration with repeated issues"
+      ],
+      "evidence_reviews": [
+        "b46ccd9a-3ef1-4195-8d93-02a14700845d",
+        "cf9d20c7-9fab-4b5e-8a3d-3c18a4dfafe3",
+        "15139be2-ea4d-4195-a240-17d1c0ca352e"
+      ]
+    }
+  ]
+}

@@ -8,10 +8,19 @@ import re
 from pathlib import Path
 from typing import Any
 
-import nltk
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-from num2words import num2words
+try:
+    import nltk
+    from nltk.corpus import stopwords
+    from nltk.stem import WordNetLemmatizer
+except ImportError:  # pragma: no cover - dependency availability varies by machine
+    nltk = None
+    stopwords = None
+    WordNetLemmatizer = None
+
+try:
+    from num2words import num2words
+except ImportError:  # pragma: no cover - dependency availability varies by machine
+    num2words = None
 
 DEFAULT_INPUT = Path("data/reviews_raw.jsonl")
 DEFAULT_OUTPUT = Path("data/reviews_clean.jsonl")
@@ -20,6 +29,45 @@ DEFAULT_METADATA = Path("data/dataset_metadata.json")
 WHITESPACE_RE = re.compile(r"\s+")
 NUMBER_RE = re.compile(r"\d+(?:[.,]\d+)?")
 NON_LETTER_RE = re.compile(r"[^a-zA-Z\s]")
+FALLBACK_STOPWORDS = {
+    "a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "from", "had",
+    "has", "have", "he", "her", "him", "his", "i", "if", "in", "is", "it", "its",
+    "me", "my", "of", "on", "or", "our", "she", "so", "that", "the", "their",
+    "them", "there", "these", "they", "this", "to", "us", "was", "we", "were",
+    "with", "you", "your",
+}
+SMALL_NUMBER_WORDS = {
+    0: "zero",
+    1: "one",
+    2: "two",
+    3: "three",
+    4: "four",
+    5: "five",
+    6: "six",
+    7: "seven",
+    8: "eight",
+    9: "nine",
+    10: "ten",
+    11: "eleven",
+    12: "twelve",
+    13: "thirteen",
+    14: "fourteen",
+    15: "fifteen",
+    16: "sixteen",
+    17: "seventeen",
+    18: "eighteen",
+    19: "nineteen",
+}
+TENS_WORDS = {
+    20: "twenty",
+    30: "thirty",
+    40: "forty",
+    50: "fifty",
+    60: "sixty",
+    70: "seventy",
+    80: "eighty",
+    90: "ninety",
+}
 
 
 def parse_args() -> argparse.Namespace:
@@ -37,6 +85,8 @@ def parse_args() -> argparse.Namespace:
 
 
 def ensure_nltk_resources() -> None:
+    if nltk is None:
+        return
     resources = [
         ("corpora/stopwords", "stopwords"),
         ("corpora/wordnet", "wordnet"),
@@ -51,13 +101,15 @@ def ensure_nltk_resources() -> None:
 
 def number_to_words(match: re.Match[str]) -> str:
     token = match.group(0).replace(",", "")
+    if num2words is None:
+        return fallback_number_to_words(token)
     try:
         if "." in token:
             converted = num2words(float(token))
         else:
             converted = num2words(int(token))
     except Exception:
-        return token
+        return fallback_number_to_words(token)
     return converted.replace("-", " ").replace(",", " ")
 
 
@@ -67,6 +119,109 @@ def extract_text(record: dict[str, Any]) -> str:
         if isinstance(value, str):
             return value
     return ""
+
+
+class IdentityLemmatizer:
+    """Fallback rule-based lemmatizer used when NLTK is unavailable."""
+
+    IRREGULARS = {
+        "am": "be",
+        "are": "be",
+        "been": "be",
+        "being": "be",
+        "did": "do",
+        "does": "do",
+        "doing": "do",
+        "had": "have",
+        "has": "have",
+        "having": "have",
+        "is": "be",
+        "ran": "run",
+        "was": "be",
+        "were": "be",
+    }
+
+    def lemmatize(self, token: str) -> str:
+        return simple_lemma(token)
+
+
+def fallback_number_to_words(token: str) -> str:
+    if "." in token:
+        left, right = token.split(".", 1)
+        left_words = fallback_number_to_words(left) if left else "zero"
+        right_words = " ".join(SMALL_NUMBER_WORDS.get(int(digit), digit) for digit in right if digit.isdigit())
+        return f"{left_words} point {right_words}".strip()
+
+    if not token.isdigit():
+        return token
+
+    number = int(token)
+    if number < 20:
+        return SMALL_NUMBER_WORDS[number]
+    if number < 100:
+        tens, ones = divmod(number, 10)
+        tens_word = TENS_WORDS[tens * 10]
+        return tens_word if ones == 0 else f"{tens_word} {SMALL_NUMBER_WORDS[ones]}"
+    if number < 1000:
+        hundreds, remainder = divmod(number, 100)
+        head = f"{SMALL_NUMBER_WORDS[hundreds]} hundred"
+        return head if remainder == 0 else f"{head} {fallback_number_to_words(str(remainder))}"
+    if number < 1_000_000:
+        thousands, remainder = divmod(number, 1000)
+        head = f"{fallback_number_to_words(str(thousands))} thousand"
+        return head if remainder == 0 else f"{head} {fallback_number_to_words(str(remainder))}"
+    return " ".join(SMALL_NUMBER_WORDS.get(int(digit), digit) for digit in token)
+
+
+def simple_lemma(token: str) -> str:
+    irregular = IdentityLemmatizer.IRREGULARS.get(token)
+    if irregular:
+        return irregular
+
+    if len(token) <= 3:
+        return token
+
+    if token.endswith("ies") and len(token) > 4:
+        return token[:-3] + "y"
+    if token.endswith("ves") and len(token) > 4:
+        return token[:-3] + "f"
+    if token.endswith(("ches", "shes", "xes", "zes", "ses")) and len(token) > 4:
+        return token[:-2]
+    if token.endswith("ing") and len(token) > 5:
+        stem = token[:-3]
+        if len(stem) >= 2 and stem[-1] == stem[-2]:
+            stem = stem[:-1]
+        if stem.endswith(("at", "it", "iz", "ut", "iv")):
+            return stem + "e"
+        return stem
+    if token.endswith("ied") and len(token) > 4:
+        return token[:-3] + "y"
+    if token.endswith("ed") and len(token) > 4:
+        stem = token[:-2]
+        if len(stem) >= 2 and stem[-1] == stem[-2]:
+            stem = stem[:-1]
+        if stem.endswith(("at", "it", "iz", "ut", "v")):
+            return stem + "e"
+        return stem
+    if token.endswith("s") and len(token) > 3 and not token.endswith(("ss", "us", "is")):
+        return token[:-1]
+    return token
+
+
+def build_language_tools() -> tuple[set[str], Any, list[str]]:
+    notes: list[str] = []
+    ensure_nltk_resources()
+
+    if stopwords is not None and WordNetLemmatizer is not None:
+        try:
+            stop_words = set(stopwords.words("english"))
+            lemmatizer = WordNetLemmatizer()
+            return stop_words, lemmatizer, notes
+        except LookupError:
+            notes.append("NLTK resources were unavailable at runtime; used fallback stopwords, heuristic number conversion, and rule-based lemmatization.")
+
+    notes.append("NLTK package was unavailable; used fallback stopwords, heuristic number conversion, and rule-based lemmatization.")
+    return set(FALLBACK_STOPWORDS), IdentityLemmatizer(), notes
 
 
 def clean_text(
@@ -125,10 +280,7 @@ def write_metadata(path: Path, data: dict[str, Any]) -> None:
 
 def main() -> None:
     args = parse_args()
-    ensure_nltk_resources()
-
-    stop_words = set(stopwords.words("english"))
-    lemmatizer = WordNetLemmatizer()
+    stop_words, lemmatizer, fallback_notes = build_language_tools()
 
     raw_rows = load_jsonl(args.input)
 
@@ -196,12 +348,13 @@ def main() -> None:
         "Removed empty reviews and reviews with blank content.",
         f"Removed reviews with fewer than {args.min_words} words after cleaning.",
         "Lowercased all text.",
-        "Converted numbers to text using num2words.",
+        "Converted numbers to text using num2words when available, otherwise a built-in fallback converter.",
         "Removed punctuation, special characters, and emojis using regex normalization.",
         "Collapsed extra whitespace.",
-        "Removed English stop words (NLTK stopwords corpus).",
-        "Lemmatized tokens with NLTK WordNetLemmatizer.",
+        "Removed English stop words using NLTK when available, otherwise a built-in fallback list.",
+        "Lemmatized tokens with NLTK WordNetLemmatizer when available, otherwise used a built-in rule-based lemmatizer.",
     ]
+    metadata["cleaning_decisions"].extend(fallback_notes)
     metadata["cleaning_stats"] = stats
     write_metadata(args.metadata, metadata)
 

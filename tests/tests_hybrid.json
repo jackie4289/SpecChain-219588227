@@ -1,16 +1,224 @@
 {
   "tests": [
     {
-      "test_id": "T_hybrid_1",
+      "test_id": "TH-01A",
       "requirement_id": "FR_hybrid_1",
-      "scenario": "Save a workout entry without crashing",
+      "scenario": "Close a donation prompt and continue into the selected session",
       "steps": [
-        "Open the workout logging feature",
-        "Enter workout information",
-        "Submit the workout"
+        "Open the app while signed out or on a fresh install",
+        "Choose a session that triggers a donation prompt",
+        "Close the prompt using the dismiss option"
       ],
-      "expected_result": "The workout is saved successfully and the application does not crash.",
-      "notes": "Revised the expected result to match the updated hybrid requirement."
+      "expected_result": "The prompt closes and the same session is still available to start without payment or account creation."
+    },
+    {
+      "test_id": "TH-01B",
+      "requirement_id": "FR_hybrid_1",
+      "scenario": "Dismiss a donation prompt while browsing",
+      "steps": [
+        "Open the home screen and browse normally",
+        "Open a donation prompt from a browsing surface",
+        "Close the prompt"
+      ],
+      "expected_result": "The user stays in the same browsing flow and can still start a session without paying."
+    },
+    {
+      "test_id": "TH-02A",
+      "requirement_id": "FR_hybrid_2",
+      "scenario": "Browse the app without seeing ads",
+      "steps": [
+        "Open the home screen",
+        "Spend about 15 minutes moving between the home screen, library, and one course page",
+        "Watch the interface while browsing"
+      ],
+      "expected_result": "No third-party display, video, or audio ad appears while browsing."
+    },
+    {
+      "test_id": "TH-02B",
+      "requirement_id": "FR_hybrid_2",
+      "scenario": "Start a session without a subscription gate",
+      "steps": [
+        "Open any meditation or sleep session",
+        "Start playback",
+        "Continue through the first minute of playback"
+      ],
+      "expected_result": "The session starts and continues without a subscription requirement appearing."
+    },
+    {
+      "test_id": "TH-03A",
+      "requirement_id": "FR_hybrid_3",
+      "scenario": "Open the Sleep area",
+      "steps": [
+        "Open the home screen",
+        "Go to the Sleep area",
+        "Look at the sections shown there"
+      ],
+      "expected_result": "Sleep meditations, sleep stories, and sleep sounds appear as separate sections."
+    },
+    {
+      "test_id": "TH-03B",
+      "requirement_id": "FR_hybrid_3",
+      "scenario": "Open each sleep section",
+      "steps": [
+        "Open the Sleep area",
+        "Open sleep meditations and return",
+        "Open sleep stories and sleep sounds"
+      ],
+      "expected_result": "Each section opens its own list of sleep-related content."
+    },
+    {
+      "test_id": "TH-04A",
+      "requirement_id": "FR_hybrid_4",
+      "scenario": "Let one sleep track roll into the next",
+      "steps": [
+        "Open any two sleep tracks",
+        "Add both tracks to the queue",
+        "Start the first track and let it finish"
+      ],
+      "expected_result": "The second track starts automatically and no blocking popup interrupts playback."
+    },
+    {
+      "test_id": "TH-04B",
+      "requirement_id": "FR_hybrid_4",
+      "scenario": "Repeat a sleep track without interruption",
+      "steps": [
+        "Open one sleep track",
+        "Turn on repeat",
+        "Let the track play to the end"
+      ],
+      "expected_result": "The same track starts again automatically and no blocking popup appears between repeats."
+    },
+    {
+      "test_id": "TH-05A",
+      "requirement_id": "FR_hybrid_5",
+      "scenario": "Open the needs-based support area",
+      "steps": [
+        "Open the browse or support area",
+        "Go to the section organized by needs or emotional states",
+        "Review the category labels"
+      ],
+      "expected_result": "Anxiety, Stress, Panic, Grief, and Anger are all visible as separate categories."
+    },
+    {
+      "test_id": "TH-05B",
+      "requirement_id": "FR_hybrid_5",
+      "scenario": "Open one support category",
+      "steps": [
+        "Open the needs-based support area",
+        "Select the Panic category",
+        "Review the page that opens"
+      ],
+      "expected_result": "A list of sessions for panic support is displayed."
+    },
+    {
+      "test_id": "TH-06A",
+      "requirement_id": "FR_hybrid_6",
+      "scenario": "Save a session as a favorite",
+      "steps": [
+        "Open any session detail page or player screen",
+        "Use the favorite control to save the session",
+        "Return to the home screen"
+      ],
+      "expected_result": "The selected session is saved and appears in a favorites area accessible from the home screen."
+    },
+    {
+      "test_id": "TH-06B",
+      "requirement_id": "FR_hybrid_6",
+      "scenario": "Start a saved favorite from home in two taps",
+      "steps": [
+        "Make sure at least one session is already saved as a favorite",
+        "Open the home screen",
+        "Start that favorite using the controls shown there"
+      ],
+      "expected_result": "The favorite session starts in two taps or fewer from the home screen."
+    },
+    {
+      "test_id": "TH-07A",
+      "requirement_id": "FR_hybrid_7",
+      "scenario": "Beginner lessons stay in order",
+      "steps": [
+        "Open the Beginner course",
+        "Review the first several lessons",
+        "Check the lesson sequence"
+      ],
+      "expected_result": "The Beginner course displays its lessons in a fixed order."
+    },
+    {
+      "test_id": "TH-07B",
+      "requirement_id": "FR_hybrid_7",
+      "scenario": "Return to the next unfinished beginner lesson",
+      "steps": [
+        "Finish lesson 1 in the Beginner course",
+        "Leave the course screen",
+        "Open the Beginner course again"
+      ],
+      "expected_result": "Lesson 1 is marked complete and lesson 2 is shown as the next lesson."
+    },
+    {
+      "test_id": "TH-08A",
+      "requirement_id": "FR_hybrid_8",
+      "scenario": "Set one daily reminder",
+      "steps": [
+        "Open reminder settings",
+        "Set the reminder time to 21:00 local time",
+        "Enable the reminder and save it"
+      ],
+      "expected_result": "The selected time is saved and one daily reminder is scheduled for 21:00."
+    },
+    {
+      "test_id": "TH-08B",
+      "requirement_id": "FR_hybrid_8",
+      "scenario": "Turn the daily reminder off",
+      "steps": [
+        "Open reminder settings while a reminder is enabled",
+        "Turn the reminder off",
+        "Save or leave the settings screen"
+      ],
+      "expected_result": "The reminder is shown as disabled and no active daily reminder remains scheduled."
+    },
+    {
+      "test_id": "TH-09A",
+      "requirement_id": "FR_hybrid_9",
+      "scenario": "Keep playback going with the screen off",
+      "steps": [
+        "Start any guided session",
+        "Connect wired or Bluetooth headphones",
+        "Turn the screen off and wait 10 minutes"
+      ],
+      "expected_result": "The audio keeps playing for the full 10-minute window and the app does not crash."
+    },
+    {
+      "test_id": "TH-09B",
+      "requirement_id": "FR_hybrid_9",
+      "scenario": "Return to the app after screen-off playback",
+      "steps": [
+        "Start any guided session",
+        "Turn the screen off while keeping headphones connected",
+        "Reopen the app after 10 minutes"
+      ],
+      "expected_result": "The session is still active and the playback controls still respond after reopening the app."
+    },
+    {
+      "test_id": "TH-10A",
+      "requirement_id": "FR_hybrid_10",
+      "scenario": "See progress carry over to another device",
+      "steps": [
+        "Sign in with the same account on device A and device B",
+        "Complete one course lesson on device A",
+        "Open the same course on device B and wait for sync"
+      ],
+      "expected_result": "Within 60 seconds, device B shows the completed lesson and the updated streak count."
+    },
+    {
+      "test_id": "TH-10B",
+      "requirement_id": "FR_hybrid_10",
+      "scenario": "Get progress back after signing in again",
+      "steps": [
+        "Sign in to an account that already has a streak and completed lessons",
+        "Sign out and then sign back in with the same account",
+        "Open the progress or course screen and wait for sync"
+      ],
+      "expected_result": "Within 60 seconds, the earlier streak count and completed lessons are restored."
     }
   ]
 }

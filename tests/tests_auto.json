@@ -3,13 +3,223 @@
     {
       "test_id": "T_auto_1",
       "requirement_id": "FR_auto_1",
-      "scenario": "Logging a workout without crashing",
+      "scenario": "Access meditation content without ads",
       "steps": [
-        "Open the workout logging screen",
-        "Enter workout details",
-        "Submit the workout"
+        "Launch the app",
+        "Navigate to meditation content section",
+        "Select a meditation session"
       ],
-      "expected_result": "The workout is saved successfully and the application remains stable."
+      "expected_result": "The meditation session plays without displaying any ads"
+    },
+    {
+      "test_id": "T_auto_2",
+      "requirement_id": "FR_auto_1",
+      "scenario": "Verify no payment request for meditation content",
+      "steps": [
+        "Launch the app",
+        "Navigate to meditation content section",
+        "Attempt to access a meditation session behind a potential paywall"
+      ],
+      "expected_result": "The app does not prompt for payment or display a paywall to access the meditation content"
+    },
+    {
+      "test_id": "T_auto_3",
+      "requirement_id": "FR_auto_2",
+      "scenario": "Donate button is displayed",
+      "steps": [
+        "Launch the app",
+        "Navigate to the main menu"
+      ],
+      "expected_result": "The 'Donate' button is visible and clearly labeled"
+    },
+    {
+      "test_id": "T_auto_4",
+      "requirement_id": "FR_auto_2",
+      "scenario": "Successful donation",
+      "steps": [
+        "Launch the app",
+        "Navigate to the donate option",
+        "Enter a valid donation amount",
+        "Confirm the donation"
+      ],
+      "expected_result": "The donation is processed successfully and a confirmation message is displayed"
+    },
+    {
+      "test_id": "T_auto_5",
+      "requirement_id": "FR_auto_3",
+      "scenario": "Playback continues when screen is locked",
+      "steps": [
+        "Start a sleep session with calming audio",
+        "Lock the device's screen",
+        "Wait for 1 minute"
+      ],
+      "expected_result": "Audio playback continues uninterrupted"
+    },
+    {
+      "test_id": "T_auto_6",
+      "requirement_id": "FR_auto_3",
+      "scenario": "Playback continues when screen is turned off",
+      "steps": [
+        "Start a sleep session with calming audio",
+        "Turn off the device's screen",
+        "Wait for 1 minute",
+        "Turn on the device's screen"
+      ],
+      "expected_result": "Audio playback continues uninterrupted"
+    },
+    {
+      "test_id": "T_auto_7",
+      "requirement_id": "FR_auto_4",
+      "scenario": "Sleep session with ad-free content",
+      "steps": [
+        "Start a new sleep session",
+        "Verify the sleep session is playing ad-free content"
+      ],
+      "expected_result": "No ads are displayed during the sleep session"
+    },
+    {
+      "test_id": "T_auto_8",
+      "requirement_id": "FR_auto_4",
+      "scenario": "Sleep session with interrupted ad display",
+      "steps": [
+        "Start a new sleep session",
+        "Simulate an ad trigger during the session"
+      ],
+      "expected_result": "The ad is not displayed, and the sleep content remains ad-free"
+    },
+    {
+      "test_id": "T_auto_9",
+      "requirement_id": "FR_auto_5",
+      "scenario": "Valid meditation sessions count",
+      "steps": [
+        "Launch Medito app",
+        "Navigate to meditation sessions section",
+        "Count available sessions focused on anxiety and stress relief"
+      ],
+      "expected_result": "At least 10 different meditation sessions are available"
+    },
+    {
+      "test_id": "T_auto_10",
+      "requirement_id": "FR_auto_5",
+      "scenario": "Edge case - no meditation sessions",
+      "steps": [
+        "Launch Medito app",
+        "Navigate to meditation sessions section",
+        "Simulate no available sessions focused on anxiety and stress relief"
+      ],
+      "expected_result": "The system displays an error message or a link to suggest new sessions"
+    },
+    {
+      "test_id": "T_auto_11",
+      "requirement_id": "FR_auto_6",
+      "scenario": "Reopen a favorite support session with one favorite",
+      "steps": [
+        "Save a support session as a favorite",
+        "Go to the home screen",
+        "Tap on the favorite session"
+      ],
+      "expected_result": "The support session is reopened"
+    },
+    {
+      "test_id": "T_auto_12",
+      "requirement_id": "FR_auto_6",
+      "scenario": "Reopen a favorite support session with multiple favorites",
+      "steps": [
+        "Save multiple support sessions as favorites",
+        "Go to the home screen",
+        "Tap on a favorite session"
+      ],
+      "expected_result": "The selected support session is reopened"
+    },
+    {
+      "test_id": "T_auto_13",
+      "requirement_id": "FR_auto_7",
+      "scenario": "User has meditated for 5 consecutive days",
+      "steps": [
+        "Launch the app",
+        "Log in as a user with 5 consecutive days of meditation",
+        "Navigate to the home screen"
+      ],
+      "expected_result": "The app displays '5-day meditation streak' on the home screen"
+    },
+    {
+      "test_id": "T_auto_14",
+      "requirement_id": "FR_auto_7",
+      "scenario": "User has not meditated for any consecutive days",
+      "steps": [
+        "Launch the app",
+        "Log in as a user with no meditation history",
+        "Navigate to the home screen"
+      ],
+      "expected_result": "The app displays '0-day meditation streak' or a relevant message on the home screen"
+    },
+    {
+      "test_id": "T_auto_15",
+      "requirement_id": "FR_auto_8",
+      "scenario": "User completes a lesson in a meditation course",
+      "steps": [
+        "Log in as a user",
+        "Enroll in a meditation course",
+        "Complete a lesson in the course"
+      ],
+      "expected_result": "The user's course progress is updated, and the completed lesson is displayed"
+    },
+    {
+      "test_id": "T_auto_16",
+      "requirement_id": "FR_auto_8",
+      "scenario": "User views their progress after completing multiple lessons",
+      "steps": [
+        "Log in as a user",
+        "Enroll in a meditation course",
+        "Complete multiple lessons in the course",
+        "View course progress"
+      ],
+      "expected_result": "The app displays the list of completed lessons and the user's overall course progress"
+    },
+    {
+      "test_id": "T_auto_17",
+      "requirement_id": "FR_auto_9",
+      "scenario": "Resume meditation after interruption on same device",
+      "steps": [
+        "Start a meditation session",
+        "Interrupt the session by closing the app",
+        "Resume the meditation session"
+      ],
+      "expected_result": "The meditation session resumes from where it was interrupted"
+    },
+    {
+      "test_id": "T_auto_18",
+      "requirement_id": "FR_auto_9",
+      "scenario": "Resume meditation on different device",
+      "steps": [
+        "Start a meditation session on device A",
+        "Switch to device B",
+        "Resume the meditation session on device B"
+      ],
+      "expected_result": "The meditation session on device B resumes from where it was left off on device A"
+    },
+    {
+      "test_id": "T_auto_19",
+      "requirement_id": "FR_auto_10",
+      "scenario": "User completes a lesson on device A, then signs in on device B",
+      "steps": [
+        "Sign in on device A",
+        "Complete a lesson on device A",
+        "Sign out on device A",
+        "Sign in on device B"
+      ],
+      "expected_result": "Updated streak count and completed lesson appear on device B within 60 seconds"
+    },
+    {
+      "test_id": "T_auto_20",
+      "requirement_id": "FR_auto_10",
+      "scenario": "User completes a lesson on device A, then signs back in on device A",
+      "steps": [
+        "Sign in on device A",
+        "Complete a lesson on device A",
+        "Sign out and sign back in on device A"
+      ],
+      "expected_result": "Updated streak count and completed lesson appear on device A within 60 seconds"
     }
   ]
 }

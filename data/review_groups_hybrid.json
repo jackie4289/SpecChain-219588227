@@ -1,13 +1,109 @@
-{  "groups": [
+{
+  "groups": [
     {
-      "group_id": "H1",
-      "theme": "Workout logging failures during activity tracking",
-      "review_ids": ["rev_12", "rev_33", "rev_41", "rev_92"],
-      "example_reviews": [
-        "The app crashes whenever I try to log a run.",
-        "Logging workouts causes the app to freeze."
+      "group_id": "A1",
+      "theme": "People evaluating Medito mainly for free access, optional donations, and the absence of ads or subscriptions",
+      "review_ids": [
+        "61d66d91-9fe8-4192-acc9-5761c30e527d",
+        "7b516d01-5afc-4673-9d53-1ad7b9705a93",
+        "0b8eddda-28ba-4438-955d-b7dc17a38031",
+        "0f84c859-d685-4863-95f8-74c6e400a13d",
+        "a23a60b5-f3b9-4495-863d-e9a77d06839b",
+        "f624056e-507c-4ecd-8d34-0a8d28ba4f38",
+        "b793b2ea-cd19-484f-88c1-a293defddf2d",
+        "83bd0071-14dc-443b-92c5-164bfaf8bafb",
+        "3a37d52f-827e-4212-a0d7-21b48c7ec869",
+        "f2ad8739-bcdf-4998-8374-5250dbf0a2f1"
       ],
-      "notes": "Removed one unrelated review about login problems from the original automated group."
+      "example_reviews": [
+        "Truly Free and Incredibly High Quality: This app is an absolute gem. In a world where every free app is filled with ads or expensive subscriptions, Medito is actually free.",
+        "used this app years ago and was impressed with the no ads no subscription experience."
+      ],
+      "notes": "Trimmed the oversized automated cluster to reviews that clearly focus on free access, optional donations, and the lack of ads or subscriptions."
+    },
+    {
+      "group_id": "A2",
+      "theme": "People using Medito at bedtime for sleep stories, sleep meditations, and uninterrupted overnight playback",
+      "review_ids": [
+        "858fc638-f063-45ed-ae70-2ecee192e6e4",
+        "ac83837f-d98d-4fff-9c0b-c85917f19626",
+        "de02a4ad-667b-4243-98e3-72a6a9c0ca7b",
+        "922a5a48-0bd9-4b61-83d0-4b3aee941ce0",
+        "ed147e40-7f07-4a52-a3a4-61470fbc2044",
+        "363c3b82-579f-4ad0-a187-6a4c2e227cce",
+        "3848badb-3317-4984-a4ee-4d88d363c2cc",
+        "23a37f6d-99f8-43a2-8c53-3b4c452ab38c",
+        "fde3afee-00dc-4b0e-b9f3-f0aa3295eb50",
+        "7dec9f69-d5af-4cdf-8973-58496d040b4e"
+      ],
+      "example_reviews": [
+        "I've been using Medito for a few months, and it really helps me sleep better. The sleep meditations, calming sounds, and Sleep Stories are amazing.",
+        "I use this free app for the sleep stories, to help me get back to sleep when I wake in the night."
+      ],
+      "notes": "Kept reviews that specifically mention bedtime use, sleep stories, sleep meditations, or requests for longer or smoother sleep playback, and removed broader relaxation comments."
+    },
+    {
+      "group_id": "A3",
+      "theme": "People relying on Medito for anxiety, stress, panic, grief, and other emotionally difficult moments",
+      "review_ids": [
+        "552e9f01-c7da-4b0a-8da7-5e57acf95dd5",
+        "f15c7447-b461-47d5-9039-3286f2ac9329",
+        "aa418060-2724-4591-bfd1-3a289d0c338e",
+        "78341614-1bca-43a6-a4ba-a1756b1a5119",
+        "5ec5388e-042f-49c4-82d5-a0f5274fd88f",
+        "ad28043e-281c-4917-a11f-7635d1570d56",
+        "284d5d6c-d00f-4283-9534-cbe59c70523e",
+        "e6e52121-e17e-4341-80ee-e3d2a80fbd0a",
+        "39749529-c4cf-4828-9acf-50ec96dee426",
+        "32184f3e-a9b2-4eae-aa8e-6d75891b2735"
+      ],
+      "example_reviews": [
+        "I'm really really thankful I stumbled upon medito app. As a guy who has severe anxiety and stress, the guided meditation tremendously helped me.",
+        "Medito is truly a gem for anyone looking to build a calm and mindful routine. The app offers sections like Anger, Panic, Fear, Grief, Stress, and Sleep."
+      ],
+      "notes": "Narrowed the automated cluster to reviews that clearly describe emotional support needs rather than broad praise for mental wellness in general."
+    },
+    {
+      "group_id": "A4",
+      "theme": "Beginners and returning users building a meditation habit through courses, streaks, reminders, and visible progress",
+      "review_ids": [
+        "ff2cd751-c385-4b2b-92f4-f088f752efe4",
+        "83a267b5-1a68-4979-8bc4-6ee5bad78984",
+        "d56d7b1e-ecba-41fa-a00a-7980cf0d9c40",
+        "843a80ec-f2f9-4558-b720-92341cc106bc",
+        "6735f733-53d1-4c6d-9dfe-910dac446474",
+        "d42f5a76-19c2-4263-8602-a3dacdadb54a",
+        "61eaa22f-6f08-4ad1-9a81-cd1e9614ed14",
+        "49749b92-7264-4e48-9fb0-db872a330de9",
+        "9234f7e5-9bb5-4bd7-982b-a725272de5d3",
+        "f35fbc5f-8333-4faa-9b2f-268780d590a4"
+      ],
+      "example_reviews": [
+        "The medito app is my top recommendation for anyone starting with meditation. There are courses that help demystify meditation for beginners.",
+        "It's the great app to meditate here. But here's the problem: The streak freezers."
+      ],
+      "notes": "Reduced the automated cluster to beginner-course, streak, challenge, timer, and habit-building reviews, and removed broader comments that were mostly about free access."
+    },
+    {
+      "group_id": "A5",
+      "theme": "Regular users affected by crashes, broken playback, failed downloads or search, and progress problems after updates",
+      "review_ids": [
+        "d93b9df3-b8cd-48aa-a3d9-e5fcf0424e26",
+        "cf9d20c7-9fab-4b5e-8a3d-3c18a4dfafe3",
+        "15139be2-ea4d-4195-a240-17d1c0ca352e",
+        "617fe192-d501-4b57-ad08-745c086c9575",
+        "ca2dd797-3a79-4d77-97a4-04f9cd3ac4ed",
+        "09f97bf8-2c39-4b08-803c-b0860fb13895",
+        "288f9fcc-e0bb-4799-be5e-f3167059bd3a",
+        "0c2d765c-60fc-4fcd-9155-953805b6fc61",
+        "da035b8d-acec-49eb-ad56-9745bd6ba9ca",
+        "ac821f4f-fbd1-47f0-9432-049eb801bcd9"
+      ],
+      "example_reviews": [
+        "I just want to complain about the search feature. From past 15 to 20 days the search button is not working.",
+        "Since the last update, the app no longer works. It runs a meditation audio once, but then stops working."
+      ],
+      "notes": "Kept the update-related reliability complaints and removed mixed-in positive reviews that were not actually describing a failure or regression."
     }
   ]
 }

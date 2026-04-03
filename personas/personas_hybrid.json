@@ -2,30 +2,153 @@
   "personas": [
     {
       "id": "P_hybrid_1",
-      "name": "Frequent Fitness Logger",
-      "description": "A user who depends on the app for regular workout tracking and expects logging to work reliably during or immediately after exercise.",
-      "derived_from_group": "H1",
+      "name": "Budget-Conscious Free User",
+      "description": "A person comparing meditation apps who wants Medito to stay genuinely free, usable without ads, and optional about donations.",
+      "derived_from_group": "A1",
       "goals": [
-        "Log workouts quickly",
-        "Track activities without interruption"
+        "Try meditation content before deciding whether to donate",
+        "Avoid subscriptions and third-party ads",
+        "Use a meditation app that still feels complete without paying"
       ],
       "pain_points": [
-        "The app crashes while saving workouts",
-        "Previously entered activity data may disappear"
+        "Donation prompts can feel too close to a paywall",
+        "Many competing apps lock content behind subscriptions",
+        "Users are skeptical when an app claims to be free but asks for money too early"
       ],
       "context": [
-        "Using the app during exercise sessions",
-        "Using the app outdoors or while moving"
+        "Comparing Medito with paid meditation apps",
+        "Looking for low-cost mental wellness support",
+        "Open to donating later if the app proves useful"
       ],
       "constraints": [
-        "Workout logging must complete without crashing",
-        "Saved workout data must persist"
+        "Core content must stay available without payment",
+        "Donation requests should be dismissible and should not block playback"
       ],
       "evidence_reviews": [
-        "rev_12",
-        "rev_41"
+        "61d66d91-9fe8-4192-acc9-5761c30e527d",
+        "7b516d01-5afc-4673-9d53-1ad7b9705a93",
+        "0b8eddda-28ba-4438-955d-b7dc17a38031"
+      ]
+    },
+    {
+      "id": "P_hybrid_2",
+      "name": "Bedtime Listener",
+      "description": "A person who opens Medito at night and depends on sleep stories, sleep meditations, and calm playback to fall asleep or get back to sleep.",
+      "derived_from_group": "A2",
+      "goals": [
+        "Fall asleep faster",
+        "Keep bedtime audio playing without interruption",
+        "Find sleep content with very little effort late at night"
       ],
-      "notes": "Refined the persona description and removed an unsupported assumption about synchronization."
+      "pain_points": [
+        "Short stories may end before the listener falls asleep",
+        "Interruptions between tracks break the bedtime routine",
+        "Sleep content is frustrating when it takes too many taps to reach"
+      ],
+      "context": [
+        "Using the app in bed, often with the screen dimmed or off",
+        "Returning to the app after waking during the night",
+        "Switching between sleep stories, meditations, and calming sounds"
+      ],
+      "constraints": [
+        "Bedtime playback should avoid blocking popups",
+        "Sleep content should be grouped clearly inside the app"
+      ],
+      "evidence_reviews": [
+        "858fc638-f063-45ed-ae70-2ecee192e6e4",
+        "de02a4ad-667b-4243-98e3-72a6a9c0ca7b",
+        "ed147e40-7f07-4a52-a3a4-61470fbc2044"
+      ]
+    },
+    {
+      "id": "P_hybrid_3",
+      "name": "Emotional Support Seeker",
+      "description": "A person turning to Medito during anxiety, stress, panic, grief, or emotional overload and needing focused support without extra searching.",
+      "derived_from_group": "A3",
+      "goals": [
+        "Find sessions that match the current emotional state",
+        "Calm down during difficult moments",
+        "Return quickly to sessions that have helped before"
+      ],
+      "pain_points": [
+        "It is harder to browse calmly when someone is already distressed",
+        "Specific support topics can be buried in a large library",
+        "Helpful sessions are easy to lose if they cannot be saved or reopened quickly"
+      ],
+      "context": [
+        "Using the app during panic, grief, anxiety, or high stress",
+        "Sometimes relying on meditation for immediate emotional regulation",
+        "Looking for structured support rather than a random session list"
+      ],
+      "constraints": [
+        "Support content should be grouped by need",
+        "Previously helpful sessions should be easy to reopen from the home screen"
+      ],
+      "evidence_reviews": [
+        "552e9f01-c7da-4b0a-8da7-5e57acf95dd5",
+        "f15c7447-b461-47d5-9039-3286f2ac9329",
+        "78341614-1bca-43a6-a4ba-a1756b1a5119"
+      ]
+    },
+    {
+      "id": "P_hybrid_4",
+      "name": "Habit-Building Beginner",
+      "description": "A beginner or returning meditator who uses Medito to learn step by step and stay consistent through courses, reminders, streaks, and visible progress.",
+      "derived_from_group": "A4",
+      "goals": [
+        "Learn meditation in a guided order",
+        "Build a steady daily practice",
+        "See enough progress to stay motivated"
+      ],
+      "pain_points": [
+        "Beginners can lose momentum when the next step is unclear",
+        "Broken streaks or missing progress reduce motivation",
+        "A habit is harder to maintain without reminders"
+      ],
+      "context": [
+        "Using beginner courses and challenges",
+        "Returning to the app daily or trying to restart a routine",
+        "Tracking streaks, total sessions, or lesson progress"
+      ],
+      "constraints": [
+        "The course path should show what comes next",
+        "Reminder settings and progress tracking should stay reliable"
+      ],
+      "evidence_reviews": [
+        "ff2cd751-c385-4b2b-92f4-f088f752efe4",
+        "83a267b5-1a68-4979-8bc4-6ee5bad78984",
+        "6735f733-53d1-4c6d-9dfe-910dac446474"
+      ]
+    },
+    {
+      "id": "P_hybrid_5",
+      "name": "Reliability-Focused Regular User",
+      "description": "A frequent Medito user who expects playback, core features, and saved progress to keep working across updates, sessions, and devices.",
+      "derived_from_group": "A5",
+      "goals": [
+        "Start and finish sessions without crashes or audio failures",
+        "Keep using the app after updates without losing key functions",
+        "See progress and streak data follow the account across devices"
+      ],
+      "pain_points": [
+        "Updates can break search, downloads, or playback",
+        "Audio may stop, freeze, or fail after the screen is off",
+        "Progress and streak data can disappear or fail to sync"
+      ],
+      "context": [
+        "Using Medito regularly over time",
+        "Reopening the app after updates or on a second device",
+        "Depending on the app during daily routines rather than one-off use"
+      ],
+      "constraints": [
+        "Playback must remain stable during normal listening conditions",
+        "Signed-in progress should be restored after sign-in and sync between devices"
+      ],
+      "evidence_reviews": [
+        "d93b9df3-b8cd-48aa-a3d9-e5fcf0424e26",
+        "ca2dd797-3a79-4d77-97a4-04f9cd3ac4ed",
+        "288f9fcc-e0bb-4799-be5e-f3167059bd3a"
+      ]
     }
   ]
 }

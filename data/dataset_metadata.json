@@ -3,7 +3,7 @@
   "app_id": "meditofoundation.medito",
   "dataset_size": {
     "raw_reviews": 5000,
-    "clean_reviews": 3891
+    "clean_reviews": 4006
   },
   "collection_method": {
     "source": "Google Play Store",
@@ -29,17 +29,18 @@
     "Removed empty reviews and reviews with blank content.",
     "Removed reviews with fewer than 3 words after cleaning.",
     "Lowercased all text.",
-    "Converted numbers to text using num2words.",
+    "Converted numbers to text using num2words when available, otherwise a built-in fallback converter.",
     "Removed punctuation, special characters, and emojis using regex normalization.",
     "Collapsed extra whitespace.",
-    "Removed English stop words (NLTK stopwords corpus).",
-    "Lemmatized tokens with NLTK WordNetLemmatizer."
+    "Removed English stop words using NLTK when available, otherwise a built-in fallback list.",
+    "Lemmatized tokens with NLTK WordNetLemmatizer when available, otherwise used a built-in rule-based lemmatizer.",
+    "NLTK package was unavailable; used fallback stopwords, heuristic number conversion, and rule-based lemmatization."
   ],
   "cleaning_stats": {
     "input_rows": 5000,
-    "removed_empty": 33,
-    "removed_duplicates": 160,
-    "removed_too_short": 916,
-    "output_rows": 3891
+    "removed_empty": 31,
+    "removed_duplicates": 168,
+    "removed_too_short": 795,
+    "output_rows": 4006
   }
 }
