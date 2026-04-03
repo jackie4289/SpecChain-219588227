@@ -14,6 +14,7 @@ REQUIRED_DIRECTORIES = [
     "tests",
     "metrics",
     "prompts",
+    "reflection",
     "src",
 ]
 
@@ -39,9 +40,13 @@ REQUIRED_FILES = [
     "metrics/metrics_hybrid.json",
     "metrics/metrics_summary.json",
     "prompts/prompt_auto.json",
+    "README.md",
+    "reflection/reflection.md",
     "src/00_validate_repo.py",
     "src/01_collect_or_import.py",
     "src/02_clean.py",
+    "src/03_manual_coding_template.py",
+    "src/04_personas_manual.py",
     "src/05_personas_auto.py",
     "src/06_spec_generate.py",
     "src/07_tests_generate.py",

@@ -1,5 +1,7 @@
-# Application: [Calm] 
-- Most important difference between pipelines: [The automated pipeline produced broader personas, while the manual pipeline produced more focused personas grounded in specific review groups.]
-- Most useful pipeline: [The hybrid pipeline produced the most balanced outputs because it preserved automation speed while improving clarity and traceability.] 
-- Most surprising finding: [Several automated requirements were grammatically correct but too vague to support reliable test generation.]
-- Observed weakness in the automated pipeline: [Some personas included unsupported assumptions that were not clearly grounded in the reviews.]
+# Reflection
+
+The manual pipeline produced the most focused personas because each one was built from a small, hand-checked review group with a clear theme. The automated pipeline scaled best and covered the entire cleaned dataset, but some outputs became broader than the supporting evidence. The hybrid pipeline was the most balanced because it started from the automated artifacts and then narrowed them back to claims that were easier to justify from the reviews.
+
+The clearest personas came from the manual and hybrid pipelines. In contrast, the automated pipeline sometimes used generic labels such as "Mindful Seeker" or "Anxious Individual" and included goals or constraints that were broader than the grouped evidence. The most useful requirements came from the hybrid pipeline because it kept the automation speed but rewrote vague ideas into more testable behaviors, such as sleep queues, favorites, and reliable cross-device progress.
+
+The automated pipeline had the strongest raw traceability coverage because its review groups covered all 4006 cleaned reviews and every generated requirement/test stayed explicitly linked through personas and requirement IDs. Its main weakness was unsupported or overly strong claims in the generated requirements, such as requiring sleep playback for 8 hours or requiring 30-minute sleep stories, which were not grounded as carefully as the manual and hybrid revisions. The hybrid pipeline improved these issues by replacing them with narrower, evidence-based requirements that were easier to verify.
